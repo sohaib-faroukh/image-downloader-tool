@@ -1,0 +1,59 @@
+require: rubocop-performance
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0.0
+  Exclude:
+    - "spec/*"
+    - "vendor/**/*"
+
+Layout/LineLength:
+  Max: 140
+  Exclude:
+    - "Gemfile"
+
+Style/SlicingWithRange:
+  Enabled: false
+
+Style/ExponentialNotation:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: false
+
+Lint/RaiseException:
+  Enabled: true
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
+Metrics/MethodLength:
+  Max: 40
+
+Metrics/AbcSize:
+  Max: 20
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ModuleFunction:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedStyle: 'hash_rockets'
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Style/HashEachMethods:
+  Enabled: true
+
