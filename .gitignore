@@ -1,0 +1,7 @@
+vendor
+log
+.DS_Store
+.ruby-version
+coverage
+.env
+storage
